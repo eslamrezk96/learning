@@ -7,3 +7,10 @@ class Learning(models.Model):
 
     eslam = fields.Char()
 
+    @api.multi
+    def test(self):
+        print('ssssssssssssssss')
+
+    @api.multi
+    def test2(self):
+        print('Eslaaaaaaaaaaaaam')
