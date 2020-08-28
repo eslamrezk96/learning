@@ -23,6 +23,13 @@
                             string="Test"
                             icon="fa-ticket"/>
                 </button>
+                <notebook position="inside">
+                    <page string="Test">
+                        <group>
+                            <field name="eslam"/>
+                        </group>
+                    </page>
+                </notebook>
             </field>
         </record>
     </data>
