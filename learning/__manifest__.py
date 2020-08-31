@@ -7,7 +7,7 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'wizard/res_partner.xml',
+        'wizard/res_partner_wizard.xml',
         'views/views.xml',
 
     ],

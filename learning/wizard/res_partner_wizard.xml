@@ -17,7 +17,7 @@
             </field>
         </record>
         <record id="hr_res_partner_wizard" model="ir.actions.act_window">
-            <field name="name">hr.res.partner.wizardt</field>
+            <field name="name">Res Partner Wizard</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">hr.res.partner</field>
             <field name="view_mode">form</field>
