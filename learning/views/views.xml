@@ -11,6 +11,8 @@
                     <header>
                         <button name="test2" string="Test 2"
                                 class="oe_highlight" type="object"/>
+                        <button name="%(learning.hr_res_partner_wizard)d" string="Wizard"
+                                class="oe_highlight" type="action"/>
                     </header>
                 </xpath>
                 <xpath expr="//field[@name='vat']" position="after">

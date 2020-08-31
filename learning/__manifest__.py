@@ -7,7 +7,9 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
+        'wizard/res_partner.xml',
         'views/views.xml',
+
     ],
     # only loaded in demonstration mode
     'demo': [

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hr_res_partner_form" model="ir.ui.view">
+            <field name="name">hr.res.partner.form</field>
+            <field name="model">hr.res.partner</field>
+            <field name="arch" type="xml">
+                <form string="Create Appointment">
+                    <group col="4">
+                        <field name="hr_id"/>
+                    </group>
+                    <footer>
+                        <button name="hr_test" string="Create" type="object" class="btn-primary"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record id="hr_res_partner_wizard" model="ir.actions.act_window">
+            <field name="name">hr.res.partner.wizardt</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.res.partner</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="hr_res_partner_form"/>
+            <field name="target">new</field>
+        </record>
+    </data>
+</odoo>
