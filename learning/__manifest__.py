@@ -9,6 +9,8 @@
         # 'security/ir.model.access.csv',
         'wizard/res_partner_wizard.xml',
         'views/views.xml',
+        'report/report_templates.xml',
+        'report/report.xml',
 
     ],
     # only loaded in demonstration mode

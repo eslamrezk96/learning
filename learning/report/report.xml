@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report
+                id="res_partner_report"
+                model="res.partner"
+                string="Print Res Partner"
+                report_type="qweb-pdf"
+                name="learning.report_res_partner"
+                file="learning.report_res_partner"
+                print_report_name="('Partner - %s' % (object.name))"
+        />
+    </data>
+</odoo>
+

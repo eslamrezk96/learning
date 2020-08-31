@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_res_partner">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <div class="oe_structure"/>
+                            <h2>
+                                <t>
+                                    <span>Partner #</span>
+                                </t>
+                                <span t-field="o.name"/>
+                            </h2>
+                            <table class="table table-sm o_main_table">
+                                <thead>
+                                    <tr>
+                                        <t t-set="colspan" t-value="5"/>
+                                        <th class="text-left">Address</th>
+                                        <th class="text-left">Job Position</th>
+                                        <th class="text-left">Phone</th>
+                                        <th class="text-left">Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="sale_tbody">
+                                        <tr t-att-class="'font-weight-bold o_line_section'">
+                                            <t>
+                                                <td class="text-left">
+                                                    <span t-field="o.street"/>
+                                                </td>
+                                                <td class="text-left">
+                                                    <span t-field="o.function"/>
+                                                </td>
+                                                <td class="text-left">
+                                                    <span t-field="o.phone"/>
+                                                </td>
+                                                <td class="text-left">
+                                                    <span t-field="o.email"/>
+                                                </td>
+                                            </t>
+                                        </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>
